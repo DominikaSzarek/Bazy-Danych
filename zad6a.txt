@@ -23,10 +23,10 @@ id_klienta -> nazwa_klienta, data_zamowienia, ilość, cena_produktu, suma_netto
 3. Dla tabeli pomieszczenia(id_pomieszczenia, numer_pomieszczenia, id_budynku, powierzchnia, liczba_okien, liczba_drzwi, ulica, miasto, kod_pocztowy) określ wszystkie zależności funkcyjne oraz klucze kandydujące.
 
 id_pomieszczenia -> numer_pomieszczenia,, id_budynku, powierzchnia,ulica, miasto, kod_pocztowy
-id_budynku -> powierzchnia, liczba_okien, liczba_drzwi
+id_budynku -> ulica, miasto, kod_pocztowy
 numer_pomieszczenia -> powierzchnia, liczba_okien, liczba_drzwi
 powierzchnia -> liczba_okien, liczba_drzwi
-miasto -> ulica, kod_pocztowy
+kod_pocztowy -> miasto
 
 KLUCZE KANDYDUJĄCE:
 {id_pomieszczenia}
